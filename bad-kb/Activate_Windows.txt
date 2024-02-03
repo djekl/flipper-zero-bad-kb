@@ -1,0 +1,22 @@
+REM Author: djekl
+REM Description: Activate Windows permanently with MAS
+REM Version: 1.1
+REM Category: GoodUSB
+DELAY 500
+GUI r
+DELAY 1000
+STRING powershell Start-Process powershell -Verb runAs
+CTRL-SHIFT ENTER
+DELAY 2500
+SHIFT TAB
+DELAY 1000
+ENTER
+DELAY 2500
+STRING irm https://massgrave.dev/get | iex
+ENTER
+DELAY 6000
+STRING 1
+DELAY 1000
+STRING 1
+DELAY 1000
+STRING 1
