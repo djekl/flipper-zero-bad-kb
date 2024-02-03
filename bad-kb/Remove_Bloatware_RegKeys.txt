@@ -1,0 +1,16 @@
+REM Author: djekl
+REM Description: Remove Bloatware RegKeys
+REM Version: 1.1
+REM Category: GoodUSB
+DELAY 500
+GUI r
+DELAY 1000
+STRING powershell Start-Process powershell -Verb runAs
+CTRL-SHIFT ENTER
+DELAY 2500
+SHIFT TAB
+DELAY 1000
+ENTER
+DELAY 2500
+STRING irm Invoke-Expression $(Invoke-WebRequest https://raw.githubusercontent.com/djekl/flipper-zero-bad-kb/master/powershell/remove_bloatware_regkeys.ps1)
+ENTER
