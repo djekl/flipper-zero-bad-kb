@@ -12,5 +12,5 @@ SHIFT TAB
 DELAY 1000
 ENTER
 DELAY 2500
-STRING irm Invoke-Expression $(Invoke-WebRequest https://raw.githubusercontent.com/djekl/flipper-zero-bad-kb/master/powershell/debloat_windows.ps1)
+STRING Invoke-Expression $(Invoke-WebRequest https://raw.githubusercontent.com/djekl/flipper-zero-bad-kb/master/powershell/debloat_windows.ps1)
 ENTER
